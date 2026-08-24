@@ -1,15 +1,24 @@
 {
   "permissions": {
     "allow": [
-      "Read",
-      "Write(checklists/**)",
-      "Write(plans/**)",
+      "Read(./**)",
       "Edit(checklists/**)",
       "Edit(plans/**)"
     ],
     "deny": [
       "Bash",
-      "WebFetch"
+      "WebFetch",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.aws/**)",
+      "Read(~/.gnupg/**)",
+      "Read(~/.azure/**)",
+      "Read(~/.kube/**)",
+      "Read(~/.config/gcloud/**)",
+      "Read(~/.docker/config.json)",
+      "Read(~/.npmrc)",
+      "Read(~/.git-credentials)"
     ]
   }
 }

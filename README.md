@@ -106,7 +106,7 @@ I have spent 14 years in security, a good part of it in incident response, and m
 
 Ibrahim El-Radi
 
-## The other two kits
+## The other three kits
 
 Same idea, different job. Each is a separate folder you download the same way.
 
@@ -117,6 +117,10 @@ Read first: https://github.com/twinturbosystems/ai-starter-harness
 Family Ops Kit, for the person in the house who plans the dinners, the week, the chores, and the budget.
 Download: https://github.com/twinturbosystems/family-ops-harness/archive/refs/heads/main.zip
 Read first: https://github.com/twinturbosystems/family-ops-harness
+
+GovCon Starter Kit, for a solo government contractor who wins prime contracts and delivers through subcontractors and teaming partners.
+Download: https://github.com/twinturbosystems/govcon-starter-harness/archive/refs/heads/main.zip
+Read first: https://github.com/twinturbosystems/govcon-starter-harness
 
 ## More
 
