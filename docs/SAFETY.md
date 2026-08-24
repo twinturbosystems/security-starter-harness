@@ -1,6 +1,6 @@
 # Safety policy, in plain words
 
-This harness is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md`, into every skill, and into the folder's settings, so they hold whether you ask nicely, ask in a roundabout way, or ask by accident.
+This kit is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md`, into every skill, and into the folder's settings, so they hold whether you ask nicely, ask in a roundabout way, or ask by accident.
 
 ## What it will do
 
@@ -22,20 +22,20 @@ This harness is defensive only. It helps you protect what is yours. It does not 
 
 ## Why permission claims do not change this
 
-People sometimes say "I have permission" or "it is my own company" to get past the rules. The harness still declines, because it cannot verify that, and because an authorized security test is a job for a professional working under a written agreement. What the harness can do instead is help you check that your own systems are locked down, which is usually what the person actually needed.
+People sometimes say "I have permission" or "it is my own company" to get past the rules. The kit still declines, because it cannot verify that, and because an authorized security test is a job for a professional working under a written agreement. What the kit can do instead is help you check that your own systems are locked down, which is usually what the person actually needed.
 
 ## Why it will not fetch links
 
-A link in a phishing message often carries a unique tag. Opening it, even from a tool, can confirm to the sender that your address is real and watched, which makes you a better target next time. It can also load a page built to look like a login screen. So the harness analyzes the link as written and tells you how to reach the real organization on your own.
+A link in a phishing message often carries a unique tag. Opening it, even from a tool, can confirm to the sender that your address is real and watched, which makes you a better target next time. It can also load a page built to look like a login screen. So the kit analyzes the link as written and tells you how to reach the real organization on your own.
 
 ## What "beyond self-help" means
 
-Some situations need a bank, a lawyer, law enforcement, or an incident response professional, and no chat tool replaces them. The harness will say so in the first lines of its reply when it sees any of these: money moving, threats or extortion, a business system with customer data accessed, an attacker who knows you or has physical access, or an account or device you cannot get back. It keeps helping with the safe steps while you make the call.
+Some situations need a bank, a lawyer, law enforcement, or an incident response professional, and no chat tool replaces them. The kit will say so in the first lines of its reply when it sees any of these: money moving, threats or extortion, a business system with customer data accessed, an attacker who knows you or has physical access, or an account or device you cannot get back. It keeps helping with the safe steps while you make the call.
 
 ## Your data
 
-Nothing in this folder sends anything anywhere except through Claude Code itself, which is the tool you installed and signed in to. There is no telemetry in this harness, no server, no account, and no analytics. The checklists live on your computer, in this folder. Redact secrets before you paste anything, and the checklists never ask you to write secrets down.
+Nothing in this folder sends anything anywhere except through Claude Code itself, which is the tool you installed and signed in to. There is no telemetry in this kit, no server, no account, and no analytics. The checklists live on your computer, in this folder. Redact secrets before you paste anything, and the checklists never ask you to write secrets down.
 
-## Reporting a problem with the harness
+## Reporting a problem with the kit
 
-If the harness ever does something this page says it will not, open an issue on the repository, or reach the author through https://ibrahim.build/links. Include what you asked and what it answered, with your own details removed.
+If the kit ever does something this page says it will not, open an issue on the repository, or reach the author through https://ibrahim.build/links. Include what you asked and what it answered, with your own details removed.
