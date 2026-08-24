@@ -6,11 +6,11 @@ Direct download: https://github.com/twinturbosystems/security-starter-harness/ar
 
 Unzip it. You get a folder called `security-starter-harness-main`. Then pick the section below that matches your assistant.
 
-Worth knowing before you choose: this folder ships a `.claude/settings.json` that blocks shell commands and web fetching and allows writing only into `checklists/` and `plans/`. Claude Code reads that file and enforces it. Codex and browser chats do not, so with those the limits are wording alone.
+Worth knowing before you choose: this folder ships a `.claude/settings.json` that blocks shell commands and web fetching and allows writing only into `checklists/` and `plans/`. Claude Code enforces that file once you have opened the folder and accepted the trust prompt. Codex and browser chats do not, so with those the limits are wording alone.
 
 ## 1. Claude Code
 
-No prompt at all. Claude Code reads `CLAUDE.md`, the `.claude/skills` folder, and the settings file by itself.
+No prompt at all. Claude Code reads `CLAUDE.md` and the `.claude/skills` folder by itself, and applies the settings file once you accept the trust prompt in step 3.
 
 1. Open a terminal in the unzipped folder.
 2. Type `claude` and press Enter.
