@@ -8,11 +8,27 @@ It is a folder of files you download onto your own computer. Inside it are writt
 
 The instructions also save each job as a short command. You type `/phishing-check` and paste the message, instead of explaining what kind of answer you want every time. Your progress lives in text files inside the folder, in `checklists/` and `plans/`, which you own and can read, edit, or delete. There is no account, no server, and no telemetry in this folder.
 
+## How it works
+
+The folder is ordinary text files. Nothing in it is compiled, and nothing runs on its own. `CLAUDE.md` holds the standing instructions: plain English, calm tone, the single next action first, no attack tooling, never ask you for a password or a one-time code. Each folder under `.claude/skills` is one named job, written as plain markdown you can open and read.
+
+When you point an assistant at the folder, it reads those instructions before it answers you. From then on it behaves like a defensive security coach for everything you ask, not just the first question. It is not a program that starts up, and nothing is installed on your computer beyond the assistant itself. It is instructions the assistant chooses to follow.
+
+The saved jobs are why you can type one short word instead of explaining what kind of answer you want every time. `/phishing-check` reads a message you paste and gives a verdict with the signals behind it. `/lock-down` hardens your accounts in priority order. `/home-network` covers the router and the Wi-Fi. `/im-hacked` gives ordered steps for a bad morning. `/small-biz-plan` writes a one-page plan. `/privacy-checkup` goes through permissions, location sharing, and old accounts.
+
+Your progress lives in files in the folder that you own and can read, edit, or delete. The checklists are in `checklists/`, one per job, so you can stop halfway and pick it up next week. Written plans go to `plans/`. There is no account, no server, and no telemetry in this folder, and nothing leaves your machine except what you type into the conversation.
+
+Two honest limitations. An assistant follows instructions, it does not enforce them the way a locked-down program does, so the safety rules in `CLAUDE.md` are strong defaults rather than a guarantee. And only the Claude Code path can actually restrict which tools the assistant is allowed to use: this folder ships a `.claude/settings.json` that denies shell commands and web fetching and permits writing only into `checklists/` and `plans/`, and Claude Code reads that file and holds it. A browser chat has no such file and no way to enforce one, so there the limits are wording alone. If that difference matters to you, use Claude Code.
+
 ## What you need first
 
-Claude Code. It is Anthropic's assistant that runs in a terminal window on your computer. Install it by following the official guide: https://docs.anthropic.com/en/docs/claude-code
+An AI assistant. This kit works with Claude Code, with Codex, or with a browser chat like ChatGPT. Claude Code is the smoothest of the three, because the folder is built for it: it reads the instructions by itself, the commands work exactly as typed, and it is the only one of the three that can enforce the tool limits in `.claude/settings.json`.
+
+Claude Code is Anthropic's assistant that runs in a terminal window on your computer. Install it by following the official guide: https://docs.anthropic.com/en/docs/claude-code
 
 Claude Code signs in with a Claude account. If you do not have one yet, it walks you through creating one the first time you run it.
+
+If you would rather use Codex or a browser chat, download the folder first the same way, then follow `ONE-PROMPT.md` for the exact steps and the prompt to paste.
 
 ## Download the kit
 
@@ -36,6 +52,16 @@ Two other ways to get the same folder, if you prefer them:
 5. If you came here because of a specific suspicious message, type `/phishing-check` instead and paste the message when it asks. Expect a verdict, the signals behind it, and what to do now.
 
 There is nothing to build and nothing to install beyond Claude Code itself.
+
+## Set it up in your assistant
+
+Downloading the folder above is still the first step. This is how you switch that folder on inside the assistant you already use.
+
+- Claude Code: no prompt needed. Open a terminal in the folder, run `claude`, accept the one-time trust prompt, and type a command. That is the five steps above.
+- Codex CLI: run it inside the folder. It reads `AGENTS.md` by itself, and one short paste-in prompt covers the rest.
+- ChatGPT or another browser chat: there is no folder there, so you attach the instruction files to the chat and paste one setup prompt. Note that a browser chat cannot enforce the tool limits this folder ships with.
+
+The exact steps and copy-ready prompts for all three are in [ONE-PROMPT.md](ONE-PROMPT.md).
 
 ## What you can type
 
