@@ -8,6 +8,8 @@ It is a folder of files you download onto your own computer. Inside it are writt
 
 The instructions also save each job as a short command. You type `/phishing-check` and paste the message, instead of explaining what kind of answer you want every time. Your progress lives in text files inside the folder, in `checklists/` and `plans/`, which you own and can read, edit, or delete. There is no account, no server, and no telemetry in this folder.
 
+If this turns out to be useful to you, a star on the repo helps other people find it.
+
 ## How it works
 
 The folder is ordinary text files. Nothing in it is compiled, and nothing runs on its own. `CLAUDE.md` holds the standing instructions: plain English, calm tone, the single next action first, no attack tooling, never ask you for a password or a one-time code. Each folder under `.claude/skills` is one named job, written as plain markdown you can open and read.
