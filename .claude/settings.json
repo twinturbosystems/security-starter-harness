@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write(checklists/**)",
+      "Write(plans/**)",
+      "Edit(checklists/**)",
+      "Edit(plans/**)"
+    ],
+    "deny": [
+      "Bash",
+      "WebFetch"
+    ]
+  }
+}
