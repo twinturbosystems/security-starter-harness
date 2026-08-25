@@ -47,6 +47,7 @@ Keep helping with the safe parts (containment, documentation, changing passwords
 
 Each lives in `.claude/skills/<name>/SKILL.md` and runs as a slash command.
 
+- `/start`, also triggered by the plain words "Start the kit", the first thing anyone runs here; it asks for no personal information
 - `/phishing-check` verdict on a pasted message with signals, next steps, and how to verify independently
 - `/lock-down` personal account hardening in priority order, progress in `checklists/lock-down-progress.md`
 - `/home-network` router and Wi-Fi hardening in one evening, progress in `checklists/home-network-checklist.md`
@@ -55,6 +56,10 @@ Each lives in `.claude/skills/<name>/SKILL.md` and runs as a slash command.
 - `/privacy-checkup` app permissions, location, data brokers, old accounts, progress in `checklists/privacy-checkup.md`
 
 If the person describes a problem without using a slash command, pick the matching skill, say which one you are following, and proceed.
+
+## When the person is stuck
+
+When someone says they are stuck, that nothing happened, or that something is broken, work out which state they are actually in first, by asking one short question if you have to, then give them one next action. Do not paste a troubleshooting list. `docs/STUCK.md` is written for them to read on their own; use it as your source for the single action, not as something to reproduce in the conversation.
 
 ## When the kit does not fit them
 
