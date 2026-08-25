@@ -2,6 +2,16 @@
 
 A folder you download that turns Claude Code into a calm, plain-English security coach for your own accounts, devices, and small business. Defensive only.
 
+## Start with one thing
+
+You do not need to read this whole page to begin. Three steps.
+
+1. Download the folder from the link further down and unzip it.
+2. Open a terminal in that folder and type `claude`.
+3. Type `/lock-down` and press Enter. If a suspicious message is what brought you here, type `/phishing-check` instead and paste the message when it asks.
+
+`/lock-down` puts your accounts in priority order and then takes one step at a time, saving your progress so you can stop and come back. The other commands can wait until you need them.
+
 ## What is this?
 
 It is a folder of files you download onto your own computer. Inside it are written instructions in plain text, which you can open and read like any other document. When you open that folder in Claude Code and start typing, the assistant reads those instructions first, and from then on it behaves like a security coach for this one job instead of a general chatbot: it works only on what is yours, it explains the why in one line, and it gives you the next step rather than a lecture. Developers call a folder like this a harness, which is why the repository is named security-starter-harness.
@@ -75,6 +85,24 @@ Six commands. Each one is a conversation, not a form.
 - `/im-hacked` gives ordered steps for the moment you think an account or a business has been compromised, and says when to call for help.
 - `/small-biz-plan` writes a one-page security plan for a business under 20 people into `plans/security-plan.md`.
 - `/privacy-checkup` goes through app permissions, location sharing, data brokers, and old accounts you forgot about.
+
+## It will not fit you perfectly
+
+This is a starting point, not a finished product. It was written for a general version of a person or a small business, and your situation is specific: your accounts, your devices, and what actually needs protecting first. Some of the order it suggests will not be your order.
+
+Everything in the folder is plain text. You can open any file in it with any text editor and read it like a letter. Nothing is compiled, nothing is hidden, and nothing is locked.
+
+The way to change it is to tell the assistant what you want different, and ask it to edit the file for you. You do not have to edit anything by hand. For example, `/lock-down` starts with your email account, because password resets for everything else land there. If the account you are actually worried about is your bank, type this:
+
+> Start the lock-down with my bank account rather than my email. Tell me what that trades away, then edit `.claude/skills/lock-down/SKILL.md` so it does that every time.
+
+Change the file and the change sticks for every future session. Anything that should apply across every job, such as tone or how much detail you want, lives in `CLAUDE.md`.
+
+Two things are worth leaving alone. The email-first order exists for a reason, so ask it to explain the trade before you reorder it. And the rules in `CLAUDE.md` about what this kit will not do, such as never asking you for a password or a one-time code, are the part protecting you from the tool itself.
+
+If a change goes wrong, download the folder again and start from the original. Your own progress is in separate files: the checklists in `checklists/` and any written plan in `plans/`. Copy those two folders somewhere safe first, then put them into the fresh folder.
+
+One honest line. It can be wrong. A phishing verdict is a judgment, not a certainty, and a message it calls safe can still be a scam. Read what it tells you, and confirm anything that matters through a channel you already trust, such as the number on the back of your card rather than the number in the message.
 
 ## Who this is for
 

@@ -56,6 +56,13 @@ Each lives in `.claude/skills/<name>/SKILL.md` and runs as a slash command.
 
 If the person describes a problem without using a slash command, pick the matching skill, say which one you are following, and proceed.
 
+## When the kit does not fit them
+
+- When the person pushes back on how a job works, or says the order does not fit their situation, do not just work around it in the moment. Offer to change the kit so it stays changed.
+- Name the file that controls it, in one line. A single job lives in `.claude/skills/<name>/SKILL.md`, so the lock-down order is `.claude/skills/lock-down/SKILL.md`. Anything that applies across every job lives in `CLAUDE.md`.
+- Ask once: "Want me to edit that file so it works this way every time?" If they say yes, make the edit and say in one sentence what changed.
+- Two exceptions. Never weaken the rules under What you never do. And when a requested change makes them less safe, say what it trades away in one line first, then do as they ask. Moving the lock-down off the email account is the common one.
+
 ## Tools
 
 You do not need a shell, a scanner, or the internet to do this job. Read files in this folder; write only inside `checklists/` and `plans/`. The settings for this folder block shell commands and fetching web pages on purpose. If a step needs a command on the person's own computer (for example checking for updates), tell them what to open or type and what to look for, and let them do it.
