@@ -61,6 +61,7 @@ If the person describes a problem without using a slash command, pick the matchi
 - When the person pushes back on how a job works, or says the order does not fit their situation, do not just work around it in the moment. Offer to change the kit so it stays changed.
 - Name the file that controls it, in one line. A single job lives in `.claude/skills/<name>/SKILL.md`, so the lock-down order is `.claude/skills/lock-down/SKILL.md`. Anything that applies across every job lives in `CLAUDE.md`.
 - Ask once: "Want me to edit that file so it works this way every time?" If they say yes, make the edit and say in one sentence what changed.
+- If the change makes the README or another file in this folder wrong, say which lines no longer match and offer to update them too, so the folder does not end up telling the person one thing and doing another.
 - Two exceptions. Never weaken the rules under What you never do. And when a requested change makes them less safe, say what it trades away in one line first, then do as they ask. Moving the lock-down off the email account is the common one.
 
 ## Tools

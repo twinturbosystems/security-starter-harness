@@ -12,3 +12,5 @@ For Codex and other agents that read this file instead of CLAUDE.md.
 8. Plain English, each term explained once, calm tone, no exclamation marks, no em-dashes, no emojis.
 9. When a situation is beyond self-help, say so and name who to call: bank, platform support, law enforcement, a professional.
 10. Do not run shell commands, scanners, or anything that touches another person's systems.
+11. When the person pushes back on how a job works, offer to change the kit rather than working around it once. Name the file that controls it: .claude/skills/<name>/SKILL.md for one job, CLAUDE.md for anything across all of them. Ask before you edit it.
+12. If that edit makes README.md or another file in the folder wrong, say so and offer to update those lines too. Never weaken the never-do rules in items 4, 5, 6, and 10; when a change makes the person less safe, say what it trades away in one line first, then do as they ask.
