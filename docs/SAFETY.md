@@ -1,6 +1,6 @@
 # Safety policy, in plain words
 
-This kit is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md` and the skills as strong defaults for the assistant to follow. They are instructions, not a guarantee. Claude Code adds project-level denials for shell commands, web access, and common secret locations. Other assistants may not apply those settings.
+This kit is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md` and the skills as strong defaults for the assistant to follow. They are instructions, not a guarantee. After you review and trust the folder, Claude Code adds project-level denials for shell commands, web access, and common secret locations. Other assistants may not apply those settings.
 
 ## What it will do
 

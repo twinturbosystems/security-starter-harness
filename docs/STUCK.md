@@ -20,7 +20,7 @@ Do this: close the assistant, open a terminal in the unzipped folder itself, not
 
 A question came up asking whether you trust the files in this folder.
 
-Do this: check that the path shown is the exact folder you downloaded and unzipped from this repository. If it is, review the listed project permissions and choose yes. If the path is different or you did not expect the folder, choose no and return to the downloaded folder. Trust enables the project's two preapprovals for edits in `checklists/` and `plans/`; the restrictive deny rules do not wait for trust.
+Do this: check that the path shown is the exact folder you downloaded and unzipped from this repository. If it is, review the listed project permissions and choose yes. If the path is different or you did not expect the folder, choose no and return to the downloaded folder. After trust, the project file applies both its restrictive deny rules and its two preapprovals for edits in `checklists/` and `plans/`. Before trust, do not assume any project rule is active.
 
 ## A permission prompt appeared
 

@@ -27,7 +27,7 @@ https://github.com/twinturbosystems/security-starter-harness/archive/refs/heads/
 
 1. Unzip the file you just downloaded. You get a folder called `security-starter-harness-main`.
 2. Open a terminal in that folder, type `claude`, and press Enter. If you have never opened a terminal, use the operating-system help immediately below.
-3. When the trust prompt appears, confirm that it names the folder you just downloaded. Review the listed project permissions, then choose yes. Trust enables the two preapproved save locations. The project's restrictive deny rules do not wait for trust.
+3. When the trust prompt appears, confirm that it names the folder you just downloaded. Review the listed project permissions, then choose yes. Trust is what lets Claude Code load this folder's project settings. After trust, those settings apply both the restrictive deny rules and the two preapproved save locations.
 
 ### Open a terminal in the downloaded folder
 
@@ -81,7 +81,7 @@ The saved jobs are why you can type one short word instead of explaining what ki
 
 Your progress lives in files in the folder that you own and can read, edit, or delete. The checklists are in `checklists/`, one per job, so you can stop halfway and pick it up next week. Written plans go to `plans/`.
 
-Two honest limitations. An assistant follows instructions, it does not enforce them the way a locked-down program does, so the safety rules in `CLAUDE.md` are strong defaults rather than a guarantee. Claude Code also reads `.claude/settings.json`. Its deny rules block Bash, PowerShell, web search, web fetching, and reads of common secret locations. Those restrictions apply even before trust. After you accept the folder's trust prompt, two `allow` rules let Claude Code edit files under `checklists/` and `plans/` without asking each time. An allow rule is a preapproval, not a sandbox: a write elsewhere may still be possible after a separate approval or because of settings outside this kit. The standing instructions say to write only in those two folders. Codex and limited browser mode do not apply `.claude/settings.json`, so there the boundaries are instructions rather than tool rules.
+Two honest limitations. An assistant follows instructions, it does not enforce them the way a locked-down program does, so the safety rules in `CLAUDE.md` are strong defaults rather than a guarantee. After you accept the folder's trust prompt, Claude Code reads `.claude/settings.json`. Its deny rules then block Bash, PowerShell, web search, web fetching, and reads of common secret locations, while two `allow` rules let Claude Code edit files under `checklists/` and `plans/` without asking each time. Before trust, do not assume any project rule in that file is active. An allow rule is a preapproval, not a sandbox: a write elsewhere may still be possible after a separate approval or because of settings outside this kit. The standing instructions say to write only in those two folders. Codex and limited browser mode do not apply `.claude/settings.json`, so there the boundaries are instructions rather than tool rules.
 
 ## Other ways to get the same folder
 

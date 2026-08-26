@@ -8,7 +8,7 @@ Unzip it. You get a folder called `security-starter-harness-main`.
 
 Choose one path before you continue: Claude Code for the full project permission rules, Codex CLI for a local folder with written boundaries, or limited browser mode for advice and drafts without local saving.
 
-Worth knowing before you choose: this folder ships a `.claude/settings.json` that denies Bash, PowerShell, web search, web fetching, and reads of common secret locations. Those denials do not wait for trust. After you trust the folder, two allow rules preapprove edits under `checklists/` and `plans/`. They do not form a sandbox around those folders. Codex and limited browser mode do not apply this file, so with those the boundaries are written instructions.
+Worth knowing before you choose: after you review and trust this folder, Claude Code applies its `.claude/settings.json`. That file denies Bash, PowerShell, web search, web fetching, and reads of common secret locations, and it preapproves edits under `checklists/` and `plans/`. Before trust, do not assume any project rule in that file is active. The allow rules do not form a sandbox around those folders. Codex and limited browser mode do not apply this file, so with those the boundaries are written instructions.
 
 Whichever provider you choose receives the files it reads and anything you type, paste, or attach as part of the conversation. Redact passwords, codes, account numbers, and other secrets first.
 
