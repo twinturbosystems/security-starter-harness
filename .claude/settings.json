@@ -1,13 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Read(./**)",
-      "Edit(checklists/**)",
-      "Edit(plans/**)"
+      "Edit(/checklists/**)",
+      "Edit(/plans/**)"
     ],
     "deny": [
       "Bash",
+      "PowerShell",
       "WebFetch",
+      "WebSearch",
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(~/.ssh/**)",

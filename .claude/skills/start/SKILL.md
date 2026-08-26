@@ -3,7 +3,6 @@ name: start
 description: The first thing to run in this folder. Confirms from the files which kit this is, names the assistant running it, says in one line what the kit does, gives the exact next thing to type, and offers a worked example built on the invented phishing message that ships in the folder. Asks for no personal information and never asks for a password, a code, or an account number.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read, Glob
 argument-hint: [nothing needed, just type: Start the kit]
 ---
 

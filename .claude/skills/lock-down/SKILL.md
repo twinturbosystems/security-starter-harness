@@ -3,7 +3,6 @@ name: lock-down
 description: Harden your personal accounts in priority order (the email that receives your password resets first, then a password manager, 2FA with an authenticator app, recovery codes, and a review of connected apps and sessions). One step at a time, with progress saved to checklists/lock-down-progress.md.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read, Write, Edit
 argument-hint: [optional: "continue", or the name of the step to start with]
 ---
 

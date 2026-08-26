@@ -1,6 +1,6 @@
 # Safety policy, in plain words
 
-This kit is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md`, into every skill, and into the folder's settings, so they hold whether you ask nicely, ask in a roundabout way, or ask by accident.
+This kit is defensive only. It helps you protect what is yours. It does not help anyone get into what is not theirs. The rules below are written into `CLAUDE.md` and the skills as strong defaults for the assistant to follow. They are instructions, not a guarantee. Claude Code adds project-level denials for shell commands, web access, and common secret locations. Other assistants may not apply those settings.
 
 ## What it will do
 
@@ -17,7 +17,7 @@ This kit is defensive only. It helps you protect what is yours. It does not help
 - Open, fetch, or preview links or attachments from a suspicious message. It reads the link as text. Opening a link can tell the sender your address is live, and can land on a fake login page.
 - Ask you for a password, a full card number, a one-time login code, a recovery code, or a full national ID number. If you start to paste one, it will ask you to redact it. It does not need those to help you.
 - Contact the sender of a suspicious message, or write a reply for you to send them.
-- Run commands on your computer. The folder's settings block the shell on purpose. If a step needs something typed on your own machine, it tells you what to type and what to look for, and you do it.
+- Run commands on your computer. In Claude Code, the folder's settings block its shell tools on purpose. In another assistant, the written instructions say not to use them. If a step needs something typed on your own machine, it tells you what to type and what to look for, and you do it.
 - Retaliate. If someone attacked you, the only outbound action is reporting to the right people.
 
 ## Why permission claims do not change this
@@ -34,7 +34,7 @@ Some situations need a bank, a lawyer, law enforcement, or an incident response 
 
 ## Your data
 
-Nothing in this folder sends anything anywhere except through Claude Code itself, which is the tool you installed and signed in to. There is no telemetry in this kit, no server, no account, and no analytics. The checklists live on your computer, in this folder. Redact secrets before you paste anything, and the checklists never ask you to write secrets down.
+This kit has no telemetry, server, account, or analytics of its own. The files your assistant reads, and anything you type, paste, or attach, are sent to that assistant's provider as part of the conversation. Saved checklists and plans live as plain text in this folder on your computer. Redact secrets before you paste anything, and never write secrets into a checklist.
 
 ## Reporting a problem with the kit
 

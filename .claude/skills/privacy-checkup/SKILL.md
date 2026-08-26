@@ -3,7 +3,6 @@ name: privacy-checkup
 description: A calm review of your digital footprint. App permissions on the phone, location sharing, data broker opt-outs in general terms, and old accounts you no longer use. Progress saved to checklists/privacy-checkup.md.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read, Write, Edit
 argument-hint: [optional: "phone", "location", "brokers", "old accounts", or "continue"]
 ---
 

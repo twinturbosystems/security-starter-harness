@@ -3,7 +3,6 @@ name: home-network
 description: Secure the router and Wi-Fi at home or in a small office in one evening. Change the router admin password, update the firmware, use WPA3 or WPA2, put smart devices on a guest network, and turn remote administration off. Progress saved to checklists/home-network-checklist.md.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read, Write, Edit
 argument-hint: [optional: router brand or model, or "continue"]
 ---
 
@@ -27,11 +26,11 @@ $ARGUMENTS is optional: a router brand or model (used only to describe where the
 
    Item 2, firmware update. Firmware is the router's own software. Find Update, Firmware, or System in the settings and apply any update that is offered. Turn on automatic updates if the option exists. If the router is so old that no update has been offered in years, say that replacing it is a reasonable next purchase, without naming a brand.
 
-   Item 3, Wi-Fi encryption. In the wireless settings, choose WPA3 if offered, otherwise WPA2 (these are the current ways of scrambling Wi-Fi traffic; older options such as WEP, or an open network with no password, should not be used). Set a Wi-Fi password of at least 12 characters that is different from the admin password. Changing it means reconnecting every device, so suggest doing this item last in the evening.
+   Item 3, guest network for smart devices. Turn on the guest network and move smart TVs, plugs, cameras, speakers, and visitors' phones onto it. Why: a guest network keeps those devices apart from the laptop with the tax returns on it, so a weak gadget cannot reach the important machines.
 
-   Item 4, guest network for smart devices. Turn on the guest network and move smart TVs, plugs, cameras, speakers, and visitors' phones onto it. Why: a guest network keeps those devices apart from the laptop with the tax returns on it, so a weak gadget cannot reach the important machines.
+   Item 4, remote administration off. Look for Remote Management, Remote Access, Cloud Access, or WAN Access to the settings page and turn it off unless they have a specific reason to keep it. If the menu is not confusing, also turn off WPS (a push-button pairing feature with known weaknesses) and UPnP if they do not use it. These last two are optional.
 
-   Item 5, remote administration off. Look for Remote Management, Remote Access, Cloud Access, or WAN Access to the settings page and turn it off unless they have a specific reason to keep it. If the menu is not confusing, also turn off WPS (a push-button pairing feature with known weaknesses) and UPnP if they do not use it. These last two are optional.
+   Item 5, Wi-Fi encryption and password. Do this last because changing the password disconnects the devices still using the main network. In the wireless settings, choose WPA3 if offered, otherwise WPA2 (these are the current ways of scrambling Wi-Fi traffic; older options such as WEP, or an open network with no password, should not be used). Set a Wi-Fi password of at least 12 characters that is different from the admin password, then reconnect the remaining devices.
 
 4. Optional extras if they have energy left: rename the Wi-Fi network to something that does not identify the household or business; look at the router's list of connected devices and note any they do not recognize; leave the router's DNS settings on automatic unless they set something on purpose.
 

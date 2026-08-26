@@ -5,19 +5,39 @@ This kit helps you lock down your own accounts, devices, home network, and small
 ## What you need first
 
 - A Mac, Windows, or Linux computer.
-- An account with an AI assistant. Claude Code is the smoothest, because this folder is built for it. Install it from the official guide at https://docs.anthropic.com/en/docs/claude-code and it walks you through creating a Claude account the first time you run it.
+- One of the three assistant choices below. Claude Code requires a Pro, Max, Team, Enterprise, or Console account. The free Claude.ai plan does not include Claude Code. Codex has its own sign-in requirements. Limited browser mode can use a chat you already have, with fewer capabilities.
 
-Choose a kit now, then finish setup on a Mac, Windows, or Linux computer. On your phone? Save this page and come back to it there.
+On your phone? Save this page and finish setup on a Mac, Windows, or Linux computer.
+
+## Choose your assistant
+
+Choose one path before you open a terminal.
+
+1. Claude Code, recommended for the full kit. It reads the kit automatically, saves progress, and applies the project permission rules. Install the current native version from the [official Claude Code guide](https://code.claude.com/docs/en/installation). Then use the three setup steps below.
+2. Codex CLI. It reads `AGENTS.md`, saves progress, and follows the kit's written boundaries. It does not apply `.claude/settings.json`. Install it from the [official Codex CLI guide](https://learn.chatgpt.com/docs/codex/cli), then use [browser-prompts/codex-cli.md](browser-prompts/codex-cli.md).
+3. Limited browser mode, for ChatGPT, Claude in a browser, or another website chat. It gives advice and drafts but cannot save progress in this folder or apply project permission rules. Use the single visible attachment in [browser-prompts/limited-browser-mode.md](browser-prompts/limited-browser-mode.md).
+
+Whichever provider you choose receives the files it reads and anything you type, paste, or attach as part of the conversation. Redact passwords, codes, account numbers, and other secrets first.
 
 ## Download the kit
 
 https://github.com/twinturbosystems/security-starter-harness/archive/refs/heads/main.zip
 
-## Three steps to set it up
+## Three steps to set it up with Claude Code
 
 1. Unzip the file you just downloaded. You get a folder called `security-starter-harness-main`.
-2. Open a terminal in that folder and type `claude`, then press Enter. A terminal is the plain text window where you type commands to your computer.
-3. Say yes when it asks whether you trust the files in this folder. It asks once per folder.
+2. Open a terminal in that folder, type `claude`, and press Enter. If you have never opened a terminal, use the operating-system help immediately below.
+3. When the trust prompt appears, confirm that it names the folder you just downloaded. Review the listed project permissions, then choose yes. Trust enables the two preapproved save locations. The project's restrictive deny rules do not wait for trust.
+
+### Open a terminal in the downloaded folder
+
+- Windows: open the unzipped folder in File Explorer. Right-click an empty area and choose Open in Terminal. If that choice is hidden, click the folder address bar, type `powershell`, and press Enter.
+- Mac: open Terminal from Applications, type `cd ` with a space after it, drag the unzipped folder from Finder into the Terminal window, and press Return.
+- Linux: open the unzipped folder in the file manager, right-click an empty area, and choose Open in Terminal. The wording may differ by desktop.
+
+The terminal is ready when the line before the cursor ends with the downloaded folder's name.
+
+After setup, read every permission prompt before deciding. Approve only an expected action and path. Normal saved work from this kit goes under `checklists/` or `plans/`. Deny an unexpected shell, web, secret-file, or other write request and ask why it was requested.
 
 ## Type this first
 
@@ -45,7 +65,7 @@ Everything below is detail. You do not need it to begin.
 
 ## What is this?
 
-It is a folder of files you download onto your own computer. Inside it are written instructions in plain text, which you can open and read like any other document. When you open that folder in Claude Code and start typing, the assistant reads those instructions first, and from then on it behaves like a security coach for this one job instead of a general chatbot: it works only on what is yours, it explains the why in one line, and it gives you the next step rather than a lecture. Developers call a folder like this a harness, which is why the repository is named security-starter-harness.
+It is a folder of files you download onto your own computer. Inside it are written instructions in plain text, which you can open and read like any other document. When you open that folder in Claude Code and start typing, the assistant reads those instructions first, and from then on it behaves like a security coach for this one job instead of a general chatbot: it works only on what is yours, it explains the why in one line, and it gives you the next step rather than a lecture.
 
 The instructions also save each job as a short command. You type `/phishing-check` and paste the message, instead of explaining what kind of answer you want every time. Your progress lives in text files inside the folder, in `checklists/` and `plans/`, which you own and can read, edit, or delete.
 
@@ -57,11 +77,11 @@ The folder is ordinary text files. Nothing in it is compiled, and nothing runs o
 
 When you point an assistant at the folder, it reads those instructions before it answers you. From then on it behaves like a defensive security coach for everything you ask, not just the first question. It is not a program that starts up, and nothing is installed on your computer beyond the assistant itself. It is instructions the assistant chooses to follow.
 
-The saved jobs are why you can type one short word instead of explaining what kind of answer you want every time. `Start the kit` orients you and offers the example. `/phishing-check` reads a message you paste and gives a verdict with the signals behind it. `/lock-down` hardens your accounts in priority order. `/home-network` covers the router and the Wi-Fi. `/im-hacked` gives ordered steps for a bad morning. `/small-biz-plan` writes a one-page plan. `/privacy-checkup` goes through permissions, location sharing, and old accounts.
+The saved jobs are why you can type one short word instead of explaining what kind of answer you want every time. `Start the kit` orients you and offers the example. `/phishing-check` reads a message you paste and gives a verdict with the signals behind it. `/lock-down` hardens your accounts in priority order. `/home-network` covers the router and the Wi-Fi. `/im-hacked` gives ordered steps for a bad morning. `/small-biz-plan` writes a concise plan of no more than 650 words. `/privacy-checkup` goes through permissions, location sharing, and old accounts.
 
 Your progress lives in files in the folder that you own and can read, edit, or delete. The checklists are in `checklists/`, one per job, so you can stop halfway and pick it up next week. Written plans go to `plans/`.
 
-Two honest limitations. An assistant follows instructions, it does not enforce them the way a locked-down program does, so the safety rules in `CLAUDE.md` are strong defaults rather than a guarantee. And only the Claude Code path can actually restrict which tools the assistant is allowed to use: this folder ships a `.claude/settings.json` that denies shell commands and web fetching and permits writing only into `checklists/` and `plans/`. Claude Code applies that file after you have opened the folder once and accepted the trust prompt, which is the same one-time prompt in step 3 above. Before that first trust, and in any assistant that never reads the file, such as limited browser mode, the limits are wording alone. If that difference matters to you, use Claude Code and say yes to the trust prompt when it appears.
+Two honest limitations. An assistant follows instructions, it does not enforce them the way a locked-down program does, so the safety rules in `CLAUDE.md` are strong defaults rather than a guarantee. Claude Code also reads `.claude/settings.json`. Its deny rules block Bash, PowerShell, web search, web fetching, and reads of common secret locations. Those restrictions apply even before trust. After you accept the folder's trust prompt, two `allow` rules let Claude Code edit files under `checklists/` and `plans/` without asking each time. An allow rule is a preapproval, not a sandbox: a write elsewhere may still be possible after a separate approval or because of settings outside this kit. The standing instructions say to write only in those two folders. Codex and limited browser mode do not apply `.claude/settings.json`, so there the boundaries are instructions rather than tool rules.
 
 ## Other ways to get the same folder
 
@@ -72,9 +92,9 @@ Two honest limitations. An assistant follows instructions, it does not enforce t
 
 The sixty seconds begins after the assistant is installed and the unzipped folder is open in it. Installing an assistant for the first time takes longer than that, and that is normal.
 
-1. Open a terminal in the folder you just unzipped. On Windows, right-click inside the folder and choose Open in Terminal. On a Mac, right-click the folder in Finder and choose New Terminal at Folder.
+1. Open a terminal in the folder you just unzipped. Use the Windows, Mac, or Linux instructions near the top of this page if you have not done that before.
 2. Type `claude` and press Enter. The first time, it asks you to sign in to your Claude account in a browser.
-3. Say yes to the trust prompt. The first time Claude Code opens a folder it has not seen before, it asks whether you trust the files in it. That is normal and it only happens once per folder. This is the folder you just downloaded, so choose yes.
+3. Review the trust prompt. Confirm that the displayed path is the folder you downloaded and that the listed permissions match the explanation above. If they do, choose yes.
 4. Type `Start the kit` and press Enter. Expect a short orientation, the exact next thing to type, and an offer to run the example phishing check so you can see the shape of a verdict.
 5. Type `/lock-down` and press Enter. Expect a short list of your accounts in priority order, then one step at a time, with your progress written into `checklists/lock-down-progress.md` so you can stop and come back.
 6. If you came here because of a specific suspicious message, type `/phishing-check` instead and paste the message when it asks. Expect a verdict, the signals behind it, and what to do now.
@@ -85,7 +105,7 @@ There is nothing to build and nothing to install beyond Claude Code itself.
 
 Downloading the folder above is still the first step. This is how you switch that folder on inside the assistant you already use.
 
-- Claude Code: no prompt needed. Open a terminal in the folder, run `claude`, accept the one-time trust prompt, and type `Start the kit`. That is the steps above. Claude Code reads the instructions by itself, the commands work exactly as typed, and it is the only one of the three that can apply the tool limits in `.claude/settings.json`.
+- Claude Code: no prompt needed. Open a terminal in the folder, run `claude`, review and accept the one-time trust prompt, and type `Start the kit`. Claude Code reads the instructions by itself, the commands work exactly as typed, and it is the only one of the three that applies `.claude/settings.json`.
 - Codex CLI: run it inside the folder. It reads `AGENTS.md` by itself, and one short paste-in prompt covers the rest.
 - Limited browser mode, which means ChatGPT, Claude in a browser, or any other chat window on a website: there is no folder there, so you attach the instruction files to the chat and paste one setup prompt. Read the limits below before you choose this path.
 
@@ -97,7 +117,7 @@ A chat window on a website cannot reach your computer. That is a hard limit of t
 
 - operate the folder you downloaded, so it cannot read or write any file in it unless you attach that file by hand
 - save your progress locally, so no checklist is updated and nothing carries over to the next chat
-- build a finished package of files for you, including the one-page business plan as a saved file
+- build a finished package of files for you, including the small-business plan as a saved file
 - apply the tool limits in `.claude/settings.json`, so there the safety rules are wording alone
 
 What it can do is real and often enough: give advice, analysis, drafts, and copy-ready checklists you paste somewhere yourself, including a phishing verdict on a message you paste. Nothing typed into a browser chat runs this kit. To actually run the kit, use Claude Code or the Codex CLI on a computer.
@@ -111,7 +131,7 @@ One starting instruction and six commands. Each one is a conversation, not a for
 - `/lock-down` hardens your personal accounts in priority order, one step at a time, with progress saved to a checklist.
 - `/home-network` walks one evening of securing the router and Wi-Fi at home or in a small office.
 - `/im-hacked` gives ordered steps for the moment you think an account or a business has been compromised, and says when to call for help.
-- `/small-biz-plan` writes a one-page security plan for a business under 20 people into `plans/security-plan.md`.
+- `/small-biz-plan` writes a concise security plan of no more than 650 words for a business under 20 people into `plans/security-plan.md`.
 - `/privacy-checkup` goes through app permissions, location sharing, data brokers, and old accounts you forgot about.
 
 If anything goes wrong at any point, read [docs/STUCK.md](docs/STUCK.md).
@@ -160,7 +180,7 @@ Self-help has limits. Get a professional, or the right organization, involved wh
 
 ## Why I made this
 
-I have spent 14 years in security, a good part of it in incident response, and most of the damage I have seen started with something small that nobody had a calm place to ask about. This is that place. It is free, it stays on your side, and it will not sell you anything.
+I have spent 14 years in security, a good part of it in incident response, and most of the damage I have seen started with something small that nobody had a calm place to ask about. This is that place. It is free, its local files stay under your control, and it will not sell you anything.
 
 Ibrahim El-Radi
 

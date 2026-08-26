@@ -3,7 +3,6 @@ name: phishing-check
 description: Paste a suspicious email, text message, or DM and get a calm, structured verdict (likely phishing, unsure, or likely legitimate) with the specific signals, what to do now, what not to click, and how to verify through an independent channel.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read
 argument-hint: [paste the message, including the sender address and the text of any links]
 ---
 
