@@ -3,7 +3,6 @@ name: im-hacked
 description: Ordered incident steps for a person or a small business that thinks an account, device, or system has been compromised. Contain, change passwords from a clean device, check forwarding rules, notify, document, and know the triggers for calling a professional now. Log kept in checklists/im-hacked-log.md.
 user-invocable: true
 disable-model-invocation: false
-allowed-tools: Read, Write, Edit
 argument-hint: [what happened, in a sentence or two]
 ---
 

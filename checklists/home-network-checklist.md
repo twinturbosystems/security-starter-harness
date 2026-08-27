@@ -5,9 +5,9 @@ Filled in by `/home-network`. One evening, one router. Check a box when the item
 - [ ] Found the router's settings page (sticker on the router, or the provider's app). Date:
 - [ ] Item 1, admin password changed from the default and stored in the password manager. Date:
 - [ ] Item 2, firmware updated, automatic updates turned on if available. Date:
-- [ ] Item 3, Wi-Fi set to WPA3 or WPA2 with a password of at least 12 characters, different from the admin password. Date:
-- [ ] Item 4, guest network on, smart devices and visitors moved to it. Date:
-- [ ] Item 5, remote administration off (and WPS and UPnP off if they were easy to find). Date:
+- [ ] Item 3, guest network on, smart devices and visitors moved to it. Date:
+- [ ] Item 4, remote administration off (and WPS and UPnP off if they were easy to find). Date:
+- [ ] Item 5, Wi-Fi set to WPA3 or WPA2 with a password of at least 12 characters, different from the admin password. Date:
 
 Optional extras:
 

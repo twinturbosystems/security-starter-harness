@@ -1,10 +1,12 @@
 # Claude Code
 
-You should not need a prompt at all. Claude Code reads `CLAUDE.md` and the `.claude/skills` folder by itself, and applies `.claude/settings.json` once you accept the trust prompt in step 3.
+You should not need a prompt at all. After you accept the folder trust prompt, Claude Code reads `CLAUDE.md`, the `.claude/skills` folder, and the project settings. Before trust, do not assume the project's deny or allow rules are active.
+
+Claude Code requires a Pro, Max, Team, Enterprise, or Console account. The free Claude.ai plan does not include it. Use the current native installer from https://code.claude.com/docs/en/installation.
 
 1. Open a terminal in the unzipped folder. A terminal is the plain text window where you type commands to your computer.
 2. Type `claude` and press Enter.
-3. Say yes to the one-time trust prompt. It only appears once per folder.
+3. Confirm that the trust prompt names the folder you downloaded, review the listed permissions, and choose yes if they match. It normally appears once per folder.
 4. Type `Start the kit` and press Enter.
 
 The commands, once you are going:

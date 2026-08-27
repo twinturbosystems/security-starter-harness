@@ -16,11 +16,17 @@ It answers like a general chatbot, or it says it cannot find `README.md`, or it 
 
 Do this: close the assistant, open a terminal in the unzipped folder itself, not in the folder above it, and start the assistant again from there. On Windows, right-click inside the unzipped folder and choose Open in Terminal, then type `claude`. On a Mac, right-click the folder in Finder, choose New Terminal at Folder, then type `claude`.
 
-## A trust or permission prompt appeared
+## A trust prompt appeared
 
-A question came up asking whether you trust the files in this folder, or whether to allow writing a checklist.
+A question came up asking whether you trust the files in this folder.
 
-Do this: choose yes. This is the folder you just downloaded and unzipped yourself. The trust question appears once per folder, and until you answer it the folder's own tool limits in `.claude/settings.json` are not applied either.
+Do this: check that the path shown is the exact folder you downloaded and unzipped from this repository. If it is, review the listed project permissions and choose yes. If the path is different or you did not expect the folder, choose no and return to the downloaded folder. After trust, the project file applies both its restrictive deny rules and its two preapprovals for edits in `checklists/` and `plans/`. Before trust, do not assume any project rule is active.
+
+## A permission prompt appeared
+
+A question came up asking whether the assistant may write a file or use a tool.
+
+Do this: read the requested tool and path before deciding. A normal save from this kit names a file under `checklists/` or `plans/`. Approve that expected save for the current task. Deny a request for a shell, web access, a secret location, or a write anywhere else, then ask why it was requested.
 
 ## The wrong instructions are being used
 
